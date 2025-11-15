@@ -5,11 +5,6 @@
 Välkommen till Medialabbets introduktionskurs i generativ AI och stora språkmodeller (LLM).  
 Kursen är praktiskt inriktad och fokuserar på hur vi kan använda AI på ett begripligt och ansvarsfullt sätt i föreningsliv, studiecirklar och vardagsarbete.
 
-Materialet i den här kursen är egenproducerat av FVK-Medialabbet, inspirerat av flera källor – bland annat boken “Generative AI and LLMs For Dummies, Snowflake Special Edition” (2024) – men är inte en översättning av boken.
-
-Kursen innehåller också delvis [AI-kurs-gymnasiet-TE3](https://github.com/MegaBit-se/AI-kurs-gymnasiet-TE3) framtagen av Anton Stoltz (MegaBit-se). Det kursmaterialet finns i ett annat kod-repo här på GitHub och är licensierat under [Creative Commons Erkännande 4.0 Internationell (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).  
-
-
 ---
 
 ## Syfte med kursen
@@ -135,3 +130,25 @@ Har du förslag på förbättringar, nya övningar eller resurser?
 - eller skapa ett issue/pull request i det här repot om du är van vid GitHub  
 
 Målet är att det här materialet ska kunna delas och återanvändas av fler som vill jobba folkbildande med AI på ett tryggt, inkluderande och nyfiket sätt.
+
+---
+
+## Källor och license
+
+Det här kursmaterialet är egenproducerat av FVK-Medialabbet, men delvis inspirerat av två centrala källor:
+
+- **AI-kurs-gymnasiet-TE3** – av Anton Stoltz (MegaBit-se).  
+  Offentligt tillgängligt kursmaterial för gymnasiet med fokus på AI, LLM:er och praktiska övningar.  
+  Repo: [AI-kurs-gymnasiet-TE3](https://github.com/MegaBit-se/AI-kurs-gymnasiet-TE3)  
+  Licens: *Creative Commons Erkännande 4.0 Internationell (CC BY 4.0)*.
+
+- **Generative AI and LLMs For Dummies, Snowflake Special Edition (2024)** – utgiven av John Wiley & Sons i samarbete med Snowflake.  
+  En lättillgänglig introduktion till generativ AI, stora språkmodeller, datans roll och hur man bygger verkliga tillämpningar.  
+  Boken kan laddas ned kostnadsfritt via Snowflake (kräver formulär):  
+  <https://www.snowflake.com/resource/generative-ai-and-llms-for-dummies/>
+
+### Licens för detta kursmaterial
+
+Detta kursmaterial är licensierat under [Creative Commons Erkännande 4.0 Internationell (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).  
+© 2025 FVK-Medialabbet. Delar av innehållet är baserat på och omarbetar idéer från ovan nämnda källor.
+
