@@ -7,6 +7,9 @@ Kursen är praktiskt inriktad och fokuserar på hur vi kan använda AI på ett b
 
 Materialet i den här kursen är egenproducerat av FVK-Medialabbet, inspirerat av flera källor – bland annat boken “Generative AI and LLMs For Dummies, Snowflake Special Edition” (2024) – men är inte en översättning av boken.
 
+Kursen innehåller också delvis [AI-kurs-gymnasiet-TE3](https://github.com/MegaBit-se/AI-kurs-gymnasiet-TE3) framtagen av Anton Stoltz (MegaBit-se). Det kursmaterialet finns i ett annat kod-repo här på GitHub och är licensierat under [Creative Commons Erkännande 4.0 Internationell (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).  
+
+
 ---
 
 ## Syfte med kursen
