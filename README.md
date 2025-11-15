@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/images/media-logo-anim.svg" alt="Medialabbet logotyp" height="140">
+  <img src="docs/assets/images/medialabbet-logo-anim.svg" height="140">
 </p>
 
 # Medialabbet – Introduktionskurs i generativ AI
