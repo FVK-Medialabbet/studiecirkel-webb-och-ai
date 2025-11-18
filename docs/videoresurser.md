@@ -66,3 +66,18 @@ För varje video kan ni följa en enkel struktur:
   Introducerar begreppet AI-agenter: från “vanlig” LLM-chat → AI-workflows → mer autonoma agenter.  
   Bra som framtidsspaning/extraresurs mot slutet av kursen.  
   Bör presenteras som frivillig fördjupning så ingen känner att de “måste” förstå allt.
+
+### 4. The Limits of AI: Generative AI, NLP, AGI, & What’s Next? (IBM Technology)
+
+- **Länk:** https://youtu.be/rBlCOLfMYfw  
+- **Längd:** ca 20 minuter (19:51)  
+- **Svårighetsgrad:** Medel–fortsättning  
+- **Koppling till kapitel:** Kapitel 5 – *Säkerhet, etik och ansvar* eller Kapitel 6 – *Framtid och fortsättning*  
+- **Syfte i kursen:**  
+  En mer fördjupad och reflekterande video om vad AI faktiskt kan och inte kan.  
+  Tar upp gränserna för generativ AI, NLP och diskuterar AGI, hallucinationer, risker och hållbarhet.  
+  Passar bra som underlag för diskussion om hype, förväntningar och hur vi kan använda AI ansvarsfullt i vår verksamhet.
+
+  Videon kan med fördel användas som:
+  - gemensam titt i en grupp som vill gå lite djupare, **eller**
+  - frivillig fördjupningsvideo som deltagarna kan se hemma inför/efter ett etik- eller framtidspass.
