@@ -15,7 +15,7 @@ Materialet publiceras både som:
 - en **webbsida** via MkDocs + GitHub Pages
 - **PDF**:er som kan delas och skrivas ut till deltagare
 
-Allt innehåll skrivs i **Markdown** och genereras automatiskt.
+Allt innehåll skrivs i **Markdown** och genereras automatiskt till hemsidan: https://fvk-medialabbet.github.io/ai-kurs-medialabbet/
 
 ---
 
