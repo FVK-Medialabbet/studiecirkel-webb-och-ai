@@ -28,6 +28,7 @@ nav:
   - Kursmaterial:
       - ChatGPT – grunder: chatgpt-grunder.md
       - Prompt engineering – nivå 1: prompt-engineering-niva-1.md
+  - Ordlista: ordlista.md
 
 markdown_extensions:
   - admonition
