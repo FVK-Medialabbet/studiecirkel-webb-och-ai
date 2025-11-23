@@ -28,7 +28,7 @@ Materialet publiceras både som:
 Allt innehåll skrivs i **Markdown** under `docs/` och genereras automatiskt till hemsidan
 (uppdatera länken här när du är nöjd med strukturen):
 
-- Kurswebb: `https://fvk-medialabbet.github.io/studiecirkel-webb-och-ai/` <!-- ändra vid behov -->
+[Kurswebb](https://fvk-medialabbet.github.io/studiecirkel-webb-och-ai/)
 
 ## Struktur
 
