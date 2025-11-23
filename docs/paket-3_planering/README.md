@@ -1,5 +1,11 @@
 # 3. Planera ett utvecklingsprojekt
 
+<p align="left">
+  <img src="../assets/images/modules/p3-overview-design-process.svg"
+       alt="Illustration: planera ett utvecklingsprojekt"
+       width="320" />
+</p>
+
 Det här modulpaketet handlar om **hur** vi planerar ett utvecklingsprojekt – inte vilken kod eller vilket ramverk vi använder.
 
 Fokus ligger på att:
