@@ -20,6 +20,8 @@ theme:
     - search.highlight
     - search.suggest
 
+use_directory_urls: false   # 👈 lägg till den här raden
+
 nav:
   - Start: index.md
 
