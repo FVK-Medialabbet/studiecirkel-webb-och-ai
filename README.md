@@ -25,8 +25,7 @@ Materialet publiceras både som:
 - en **webbsida** via MkDocs + GitHub Pages  
 - **PDF:er** som kan delas och skrivas ut till deltagare
 
-Allt innehåll skrivs i **Markdown** under `docs/` och genereras automatiskt till hemsidan
-(uppdatera länken här när du är nöjd med strukturen):
+Allt innehåll skrivs i **Markdown** under `docs/` och genereras automatiskt till hemsidan:
 
 [Kurswebb](https://fvk-medialabbet.github.io/studiecirkel-webb-och-ai/)
 
@@ -49,11 +48,11 @@ mkdocs.yml
 ```
 Lägg till fler moduler genom att skapa nya .md-filer i docs/ och uppdatera navigeringen i mkdocs.yml.
 
-Licens och källor
+## Licens och källor
 
 Kursmaterialet i det här repot är framtaget av FVK-Medialabbet och får vidareutvecklas över tid i takt med att vi lär oss mer och samlar in erfarenheter från deltagare.
 
 Innehållet är inspirerat av, men inte översatt från, bland annat:
-	•	Generative AI and LLMs For Dummies, Snowflake Special Edition (John Wiley & Sons, 2024)
-	•	artiklar, bloggar och videor om generativ AI och LLM:er
-	•	praktiska erfarenheter från Medialabbet, Friskvårdsklubben och Bottennappet i Väst
+- Generative AI and LLMs For Dummies, Snowflake Special Edition (John Wiley & Sons, 2024)
+- artiklar, bloggar och videor om generativ AI och LLM:er
+- praktiska erfarenheter från Medialabbet, Friskvårdsklubben och Bottennappet i Väst
