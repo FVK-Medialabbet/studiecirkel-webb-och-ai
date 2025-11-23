@@ -1,5 +1,11 @@
 # Studiecirkel – webb & AI
 
+<p align="left">
+  <img src="assets/images/medialabbet-logo-anim.svg"
+       alt="Medialabbet animerad logotyp"
+       width="640" />
+</p>
+
 Välkommen till Medialabbets studiecirkel i modern webb- och apputveckling med AI.
 
 Kursen är uppdelad i fyra modulpaket. Varje paket har egna modulsidor med mål, innehåll, övningar och länkar till vidare självstudier.
