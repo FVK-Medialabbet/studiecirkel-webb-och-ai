@@ -1,4 +1,4 @@
-ä# Studiecirkel – webb & AI
+# Studiecirkel – webb & AI
 
 Välkommen till Medialabbets studiecirkel i modern webb- och apputveckling med AI.
 
