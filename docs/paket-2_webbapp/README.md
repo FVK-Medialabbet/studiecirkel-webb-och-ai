@@ -1,5 +1,11 @@
 # 2. Gör en enkel webbapp med frontend och backend
 
+<p align="left">
+  <img src="../assets/images/modules/p2-overview-web-dev.svg"
+       alt="Illustration: enkel webbapp med frontend och backend"
+       width="320" />
+</p>
+
 Det här modulpaketet bygger vidare på paket 1.  
 Nu går vi från ”hemsida” till att förstå vad en **webbapp** är och hur frontend och backend samspelar.
 
