@@ -1,6 +1,10 @@
 # 1. Gör din första hemsida gratis med GitHub Pages
 
-![Illustration: bygga en hemsida](../assets/images/modules/p1-overview-building-website.svg){ width="320" }
+<p align="left">
+  <img src="../assets/images/modules/p1-overview-building-website.svg"
+       alt="Illustration: bygga en hemsida"
+       width="320" />
+</p>
 
 Det här modulpaketet är en introduktion till webbutveckling med fokus på att:
 
