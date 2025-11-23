@@ -32,12 +32,17 @@ nav:
 
   - "2. Gör en enkel webbapp med frontend och backend":
       - Översikt: paket-2_webbapp/README.md
-      # Lägg till fler modulsidor här när de finns
-      # - "2.1 ...": paket-2_webbapp/2.1_....md
+      - "2.1 Från hemsida till webbapp – frontend och backend": paket-2_webbapp/2.1_intro-frontend-backend.md
+      - "2.2 Komponenter och data i frontend": paket-2_webbapp/2.2_komponenter-och-data.md
+      - "2.3 API och första steget mot databas": paket-2_webbapp/2.3_api-och-databas-intro.md
+      - "Övning & självstudier – aktivitetslista som webbapp": paket-2_webbapp/2.4_ovning-sjalvstudier.md
 
   - "3. Planera ett utvecklingsprojekt":
       - Översikt: paket-3_planering/README.md
-      # - "3.1 ...": paket-3_planering/3.1_....md
+      - "3.1 Från idé till problemdefinition och målbild": paket-3_planering/3.1_problem-och-malbild.md
+      - "3.2 Krav, scope och enkel roadmap": paket-3_planering/3.2_krav-scope-roadmap.md
+      - "3.3 Repo, roller och arbetssätt i ett litet team": paket-3_planering/3.3_repo-roller-arbetssatt.md
+      - "Övning & självstudier – din egen projektplan på 1–2 sidor": paket-3_planering/3.4_ovning-sjalvstudier.md
 
   - "4. Bygg med AI och gör egna agenter":
       - Översikt: paket-4_ai-agenter/README.md
@@ -50,7 +55,7 @@ nav:
       - Referenser och licens: referenser.md
       - Videoresurser: videoresurser.md
       - Videobank: videobank.md
-      - Chatt-server (Zulip): zulip-kurs-chatt.md
+      - "Chatt-server (Zulip)": zulip-kurs-chatt.md
 
 markdown_extensions:
   - admonition
