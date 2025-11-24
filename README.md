@@ -2,7 +2,7 @@
   <img src="docs/assets/images/medialabbet-logo.svg" alt="Medialabbet logotyp" height="160">
 </p>
 
-# Studiecirkel – webb & AI (Medialabbet)
+# Studiecirkel – Modern webb- & apputveckling med AI (Medialabbet)
 
 Det här repot innehåller kursmaterialet för Medialabbets studiecirkel i **modern webb- och apputveckling med AI**.
 
