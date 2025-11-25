@@ -1,4 +1,4 @@
-# 1. Gör din första hemsida gratis med GitHub Pages
+# Paket 1 – Gör din första hemsida gratis med GitHub Pages
 
 <p align="left">
   <img src="../assets/images/modules/p1-overview-building-website.svg"
@@ -6,19 +6,21 @@
        width="320" />
 </p>
 
-Det här modulpaketet är en introduktion till webbutveckling med fokus på att:
+I det här paketet bygger du steg för steg upp **din första egna hemsida**:
 
-- förstå grunderna i hur webbsidor fungerar
-- använda Git och GitHub för att spara och dela kod
-- publicera en enkel hemsida gratis med GitHub Pages
-- bygga upp sidan med HTML, styla den med CSS
-- lägga till enkel interaktivitet med JavaScript
+1. Först får du upp en enkel sida online med **GitHub Pages** (utan att krångla med Git-kommandon).
+2. Sedan lär du dig grunderna i **HTML och CSS**.
+3. Till sist lägger du till lite **struktur och enkel interaktivitet**, så sidan känns mer som en “riktig” webbsida.
 
-Paketet är uppdelat i tre moduler och en avslutande övning:
+Paket 1 består av tre moduler och en övning:
 
-- [1.1 Git, GitHub och GitHub Pages](1.1_git-github-pages.md)  
-- [1.2 HTML och CSS](1.2_html-och-css.md)  
-- [1.3 Animerade menyer och interaktivitet med JavaScript](1.3_js-menyer-interaktivitet.md)  
-- [Övning & självstudier – gör en hemsida om dig själv](1.4_ovning-sjalvstudier.md)
+- **1.1 Din första hemsida med GitHub Pages**  
+- **1.2 HTML och CSS – bygg vidare på din första sida**  
+- **1.3 Enklare menyer och interaktivitet med JavaScript**  
+- **1.4 Övning & självstudier – gör en enkel hemsida om dig själv, en förening eller en hobby**
 
-Efter paketet ska du ha en egen enkel hemsida publicerad med GitHub Pages, som du kan fortsätta bygga vidare på under resten av studiecirkeln.
+Målet är inte att allt blir “perfekt”, utan att du:
+
+- ser hur en webbplats blir till  
+- vågar ändra och testa själv  
+- har en **egen webbadress** du kan fortsätta bygga vidare på efter cirkeln.
