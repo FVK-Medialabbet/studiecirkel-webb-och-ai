@@ -77,7 +77,7 @@ När dessa paket är klara dyker de upp i menyn, precis som Paket 1 och 2.
 - Som **självstudier** – välj ett paket, läs igenom, följ stegen och bygg något eget.  
 - Som **referens** – slå upp begrepp, exempel och videolänkar när du fastnar.
 
-Om du är med i Medialabbet eller Friskvårdsklubben kan du också:
+Om du är med i Medialabbet, Friskvårdsklubben eller Bottennappet i Väst kan du också:
 
 - ställa frågor i den gemensamma chatt-servern (se menyn “Chatt-server”)  
 - dela länkar till dina GitHub Pages-sidor och små projekt för feedback.
