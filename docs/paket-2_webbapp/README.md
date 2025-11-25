@@ -1,4 +1,4 @@
-# 2. Gör en enkel webbapp med frontend och backend
+# Paket 2 – Bygg en enkel webbapp med JavaScript och API
 
 <p align="left">
   <img src="../assets/images/modules/p2-overview-web-dev.svg"
@@ -6,22 +6,25 @@
        width="320" />
 </p>
 
-Det här modulpaketet bygger vidare på paket 1.  
-Nu går vi från ”hemsida” till att förstå vad en **webbapp** är och hur frontend och backend samspelar.
+I det här paketet går vi från **statisk hemsida** till en **enkel webbapp**.
 
-Fokus ligger på:
+Det betyder att sidan inte bara visar text du själv har skrivit, utan också kan:
 
-- grundläggande begrepp: frontend, backend, API, databas
-- komponenttänk i frontend (t.ex. med Svelte eller annat ramverk)
-- enkel hantering av data (listor/objekt) i koden
-- att hämta data från ett API
-- en första smak av databas och hosting på gratisnivå
+- visa data som kommer från **JavaScript-kod**
+- hämta information från ett **API** (en webbtjänst)
+- reagera på användaren (t.ex. filtrera eller lägga till saker i en lista)
 
-Paketet är uppdelat i tre moduler och en övning:
+Vi håller det fortfarande på grundnivå, med fokus på:
 
-- [2.1 Från hemsida till webbapp – frontend och backend](2.1_intro-frontend-backend.md)  
-- [2.2 Komponenter och data i frontend](2.2_komponenter-och-data.md)  
-- [2.3 API och första steget mot databas](2.3_api-och-databas-intro.md)  
-- [Övning & självstudier – aktivitetslista som webbapp](2.4_ovning-sjalvstudier.md)
+- att **förstå principen** frontend ↔ API (backend)  
+- att **våga läsa och ändra JavaScript-kod**  
 
-Efter paketet ska du ha en grundläggande mental modell av hur en webbapp hänger ihop och ha testat att visa data i en enkel komponent och hämta data från ett API.
+Paket 2 består av tre moduler och en övning:
+
+- **2.1 Vad är en webbapp? – frontend, backend och API**  
+- **2.2 JavaScript i webbläsaren – data och listor**  
+- **2.3 Hämta data från ett API – fetch och JSON**  
+- **2.4 Övning & självstudier – aktivitetslista som webbapp**
+
+I senare paket kommer du kunna bygga mer avancerade appar med t.ex. **SvelteKit**.  
+Här handlar det om att få grundkänslan för hur JavaScript kan göra din sida mer “levande”.
