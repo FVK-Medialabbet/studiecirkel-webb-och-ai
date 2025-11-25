@@ -2,17 +2,17 @@
   <img src="docs/assets/images/medialabbet-logo.svg" alt="Medialabbet logotyp" height="160">
 </p>
 
-# Studiecirkel – Modern webb- & apputveckling med AI (Medialabbet)
+# Studiecirkel – Modern webb- och apputveckling med AI
 
-Det här repot innehåller kursmaterialet för Medialabbets studiecirkel i **modern webb- och apputveckling med AI**.
+Det här repot innehåller kursmaterialet för studiecirkeln **”Modern webb- och apputveckling med AI”** som drivs av Medialabbet inom Friskvårdsklubben Göteborg, i samarbete med **Bottennappet i Väst**.
 
 Studiecirkeln är uppdelad i fyra modulpaket:
 
 1. **Gör din första hemsida gratis med GitHub Pages**  
-   – Git, GitHub, HTML, CSS, enkel JavaScript och en egen publicerad sida.
+   – GitHub-konto, repository, GitHub Pages, enkel Markdown/HTML och en egen publicerad sida.
 
 2. **Gör en enkel webbapp med frontend och backend**  
-   – komponenter, data, API:er och introduktion till databas/hosting.
+   – komponenter, dataflöden, API:er och en första introduktion till databas/hosting.
 
 3. **Planera ett utvecklingsprojekt**  
    – från idé och målbild till krav, scope, roadmap och arbetsprocess.
@@ -27,7 +27,22 @@ Materialet publiceras både som:
 
 Allt innehåll skrivs i **Markdown** under `docs/` och genereras automatiskt till hemsidan:
 
-[Kurswebb](https://fvk-medialabbet.github.io/studiecirkel-webb-och-ai/)
+👉 [Kurswebb](https://fvk-medialabbet.github.io/studiecirkel-webb-och-ai/)
+
+---
+
+## För vem är kursen?
+
+Studiecirkeln vänder sig till:
+
+- deltagare i **Friskvårdsklubben Göteborg** och **Bottennappet i Väst**
+- personer som är **nyfikna på webbutveckling och AI**, men inte nödvändigtvis har programmerat tidigare
+- ledare och eldsjälar i föreningslivet som vill bygga **enkla, praktiska lösningar** för sina verksamheter
+- deltagare med grundläggande datorvana (t.ex. kunna använda webbläsare, spara filer, logga in på webbtjänster)
+
+Målet är inte att bli “fullfjädrad utvecklare”, utan att tillsammans utforska hur vi kan använda modern webbteknik och AI som **praktiska verktyg** i våra projekt.
+
+---
 
 ## Struktur
 
@@ -46,13 +61,20 @@ docs/
 mkdocs.yml
 .github/workflows/
 ```
-Lägg till fler moduler genom att skapa nya .md-filer i docs/ och uppdatera navigeringen i mkdocs.yml.
+
+Lägg till fler moduler genom att skapa nya `.md`-filer i `docs/` och uppdatera navigeringen i `mkdocs.yml`.
+
+---
 
 ## Licens och källor
 
-Kursmaterialet i det här repot är framtaget av FVK-Medialabbet och får vidareutvecklas över tid i takt med att vi lär oss mer och samlar in erfarenheter från deltagare.
+Kursmaterialet i det här repot är framtaget av **FVK-Medialabbet** och får vidareutvecklas över tid i takt med att vi lär oss mer och samlar in erfarenheter från deltagare i **Friskvårdsklubben Göteborg** och **Bottennappet i Väst**.
+
+Om inget annat anges är innehållet licensierat under **Creative Commons Erkännande 4.0 (CC BY 4.0)**.  
+Det betyder att du får använda, ändra och dela materialet, så länge du anger källa.
 
 Innehållet är inspirerat av, men inte översatt från, bland annat:
-- Generative AI and LLMs For Dummies, Snowflake Special Edition (John Wiley & Sons, 2024)
+
+- *Generative AI and LLMs For Dummies, Snowflake Special Edition* (John Wiley & Sons, 2024)
 - artiklar, bloggar och videor om generativ AI och LLM:er
-- praktiska erfarenheter från Medialabbet, Friskvårdsklubben och Bottennappet i Väst
+- praktiska erfarenheter från Medialabbet och våra föreningars verksamhet
