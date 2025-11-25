@@ -1,7 +1,7 @@
-site_name: Studiecirkel – Modern webb- & apputveckling med AI
+site_name: Modern webb- och apputveckling med AI
 site_url: https://fvk-medialabbet.github.io/studiecirkel-webb-och-ai
 
-repo_name: FVK-Medialabbet / Studiecirkel – webb & AI
+repo_name: FVK-Medialabbet / Studiecirkel i webb och AI
 repo_url: https://github.com/FVK-Medialabbet/studiecirkel-webb-och-ai
 
 theme:
@@ -20,44 +20,32 @@ theme:
     - search.highlight
     - search.suggest
 
-use_directory_urls: false   # 👈 lägg till den här raden
-
 nav:
   - Start: index.md
 
-  - "1. Gör din första hemsida gratis med GitHub Pages":
+  - Paket 1 – Gör din första hemsida:
       - Översikt: paket-1_hemsida/README.md
-      - "1.1 Git, GitHub och GitHub Pages": paket-1_hemsida/1.1_git-github-pages.md
-      - "1.2 HTML och CSS": paket-1_hemsida/1.2_html-och-css.md
-      - "1.3 Animerade menyer och interaktivitet med JavaScript": paket-1_hemsida/1.3_js-menyer-interaktivitet.md
-      - "Övning & självstudier – gör en hemsida om dig själv": paket-1_hemsida/1.4_ovning-sjalvstudier.md
+      - 1.1 Din första hemsida med GitHub Pages: paket-1_hemsida/1.1_git-github-pages.md
+      - 1.2 HTML och CSS – bygg vidare på din första sida: paket-1_hemsida/1.2_html-och-css.md
+      - 1.3 Enklare menyer och interaktivitet med JavaScript: paket-1_hemsida/1.3_js-menyer-interaktivitet.md
+      - 1.4 Övning & självstudier – din första riktiga hemsida: paket-1_hemsida/1.4_ovning-sjalvstudier.md
 
-  - "2. Gör en enkel webbapp med frontend och backend":
+  - Paket 2 – Bygg en enkel webbapp:
       - Översikt: paket-2_webbapp/README.md
-      - "2.1 Från hemsida till webbapp – frontend och backend": paket-2_webbapp/2.1_intro-frontend-backend.md
-      - "2.2 Komponenter och data i frontend": paket-2_webbapp/2.2_komponenter-och-data.md
-      - "2.3 API och första steget mot databas": paket-2_webbapp/2.3_api-och-databas-intro.md
-      - "Övning & självstudier – aktivitetslista som webbapp": paket-2_webbapp/2.4_ovning-sjalvstudier.md
+      - 2.1 Vad är en webbapp? – frontend, backend och API: paket-2_webbapp/2.1_intro-frontend-backend.md
+      - 2.2 JavaScript i webbläsaren – data och listor: paket-2_webbapp/2.2_js-data-listor.md
+      - 2.3 Hämta data från ett API – fetch och JSON: paket-2_webbapp/2.3_api-och-json.md
+      - 2.4 Övning & självstudier – aktivitetslista som webbapp: paket-2_webbapp/2.4_ovning-aktivitetslista.md
 
-  - "3. Planera ett utvecklingsprojekt":
-      - Översikt: paket-3_planering/README.md
-      - "3.1 Från idé till problemdefinition och målbild": paket-3_planering/3.1_problem-och-malbild.md
-      - "3.2 Krav, scope och enkel roadmap": paket-3_planering/3.2_krav-scope-roadmap.md
-      - "3.3 Repo, roller och arbetssätt i ett litet team": paket-3_planering/3.3_repo-roller-arbetssatt.md
-      - "Övning & självstudier – din egen projektplan på 1–2 sidor": paket-3_planering/3.4_ovning-sjalvstudier.md
+  - 4. AI och ChatGPT:
+      - ChatGPT – grunder: chatgpt-grunder.md
+      - Prompt engineering – nivå 1: prompt-engineering-niva-1.md
 
-  - "4. Bygg med AI och gör egna agenter":
-      - Översikt: paket-4_ai-agenter/README.md
-      - "4.1 ChatGPT – grunder": paket-4_ai-agenter/4.1_chatgpt-grunder.md
-      - "4.2 Prompt engineering – nivå 1": paket-4_ai-agenter/4.2_prompt-engineering-niva-1.md
-      # - "4.3 Egna agenter och flows": paket-4_ai-agenter/4.3_egna-agenter-flows.md
-
-  - Resurser:
-      - Ordlista: ordlista.md
-      - Referenser och licens: referenser.md
-      - Videoresurser: videoresurser.md
-      - Videobank: videobank.md
-      - "Chatt-server (Zulip)": zulip-kurs-chatt.md
+  - Videoresurser: videoresurser.md
+  - Videobank: videobank.md
+  - Chatt-server: zulip-kurs-chatt.md
+  - Ordlista: ordlista.md
+  - Referenser och licens: referenser.md
 
 markdown_extensions:
   - admonition
