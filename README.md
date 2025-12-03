@@ -55,7 +55,7 @@ docs/
   index.md
   paket-1_hemsida/
   paket-2_webbapp/
-  paket-3_planering/
+  paket-3_frontend-svelte/
   paket-4_ai-agenter/
   assets/
     images/
@@ -70,7 +70,8 @@ Lägg till fler moduler genom att skapa nya `.md`-filer i `docs/` och uppdatera 
 
 ## Licens och källor
 
-Kursmaterialet i det här repot är framtaget av **FVK-Medialabbet** och får vidareutvecklas över tid i takt med att vi lär oss mer och samlar in erfarenheter från deltagare i **Friskvårdsklubben Göteborg** och **Bottennappet i Väst**.
+Kursmaterialet i det här repot är framtaget av **FVK-Medialabbet** och och **Bottennappet i Väst**. 
+Det kommer vidareutvecklas över tid i takt med att vi lär oss mer och samlar in erfarenheter från deltagare i studiecirkeln.
 
 Om inget annat anges är innehållet licensierat under **Creative Commons Erkännande 4.0 (CC BY 4.0)**.  
 Det betyder att du får använda, ändra och dela materialet, så länge du anger källa.
@@ -80,3 +81,4 @@ Innehållet är inspirerat av, men inte översatt från, bland annat:
 - *Generative AI and LLMs For Dummies, Snowflake Special Edition* (John Wiley & Sons, 2024)
 - artiklar, bloggar och videor om generativ AI och LLM:er
 - praktiska erfarenheter från Medialabbet och våra föreningars verksamhet
+- samt erfarenheter, ändringar och tillägg genom själva studiecirkeln
