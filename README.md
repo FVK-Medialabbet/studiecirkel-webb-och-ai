@@ -4,7 +4,9 @@
 
 # Studiecirkel – Modern webb- och apputveckling med AI
 
-Det här repot innehåller kursmaterialet för studiecirkeln **”Modern webb- och apputveckling med AI”** som drivs av Medialabbet inom Friskvårdsklubben Göteborg, i samarbete med **Bottennappet i Väst**.
+Det här repot innehåller materialet för studiecirkeln **”Modern webb- och apputveckling med AI”** som är framtaget av Medialabbet, Friskvårdsklubben Göteborg, i samarbete med **Bottennappet i Väst**.
+
+Studiecirkeln i sig drivs genom **samarbete mellan Bottennappet i Vöst och Folkuniversitetet**
 
 Studiecirkeln är uppdelad i fyra modulpaket:
 
