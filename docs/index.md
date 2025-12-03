@@ -6,7 +6,9 @@
        width="260" />
 </p>
 
-Den här sidan samlar materialet till studiecirkeln **Modern webb- och apputveckling med AI**, framtagen av Medialabbet inom Friskvårdsklubben Göteborg tillsammans med Bottennappet i Väst.
+Den här sidan samlar materialet till studiecirkeln **Modern webb- och apputveckling med AI**, framtagen av Medialabbet (verksamhet inom Friskvårdsklubben) tillsammans med Bottennappet i Väst.
+
+Studiecirkeln bedrivs genom samarbete mellan **Bottennappet i Vöst** och **Folkuniversitetet**
 
 Målet är att deltagare – oavsett tidigare erfarenhet – steg för steg ska kunna:
 
