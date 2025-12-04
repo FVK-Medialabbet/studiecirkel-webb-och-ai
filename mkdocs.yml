@@ -43,6 +43,7 @@ nav:
 
   - Videoresurser: videoresurser.md
   - Videobank: videobank.md
+  - Ollama-setup: ollama_setup_medialaptop.md
   - Chatt-server: zulip-kurs-chatt.md
   - Ordlista: ordlista.md
   - Referenser och licens: referenser.md
