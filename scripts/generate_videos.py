@@ -17,6 +17,8 @@ def extract_video_id(url: str) -> str:
       - https://youtu.be/ID
       - https://www.youtube.com/watch?v=ID
       - https://youtube.com/shorts/ID
+
+    Playlist-URL:er (list=...) hanteras inte här.
     """
     # youtu.be/ID
     m = re.search(r"youtu\.be/([^?&/]+)", url)
@@ -39,6 +41,7 @@ def extract_video_id(url: str) -> str:
 def fetch_title(url: str) -> str:
     """
     Hämtar videotitel via YouTubes oEmbed (ingen API-nyckel behövs).
+    Funkar även för vissa playlist-URL:er.
     """
     oembed_url = "https://www.youtube.com/oembed"
     params = {"url": url, "format": "json"}
@@ -59,9 +62,17 @@ def load_videos():
 def generate_snippets(urls):
     """
     Skapar små .md-snuttar i docs/includes/videos/ med thumbnail + länk.
+
+    Om vi inte kan hitta ett video-ID (t.ex. playlist-URL) hoppar vi över
+    snippet för just den länken, men låter resten fortsätta.
     """
     for url in urls:
-        vid = extract_video_id(url)
+        try:
+            vid = extract_video_id(url)
+        except ValueError:
+            print(f"Hoppar över snippet (ingen video-ID, troligen playlist): {url}")
+            continue
+
         thumb_url = f"https://img.youtube.com/vi/{vid}/hqdefault.jpg"
 
         try:
@@ -86,6 +97,8 @@ def update_videobank(urls):
     """
     Lägger till nya rader i videobank-tabellen med tomma bedömningsfält.
     Antagande: docs/videobank.md har redan en tabell med rubrikrad.
+
+    Här behöver vi inget video-ID – bara URL och titel.
     """
     text = VIDEOBANK.read_text(encoding="utf-8")
 
@@ -107,13 +120,11 @@ def update_videobank(urls):
             print(f"Hoppar över (finns redan i videobank): {url}")
             continue
 
-        vid = extract_video_id(url)
-
         try:
             title = fetch_title(url)
         except Exception as e:
             print(f"Varning: kunde inte hämta titel för {url}: {e}")
-            title = f"YouTube-video ({vid})"
+            title = "YouTube-video"
 
         current_num += 1
         # Lämna längd, svårighetsgrad, rekommenderad användning, med i kursen? tomma
