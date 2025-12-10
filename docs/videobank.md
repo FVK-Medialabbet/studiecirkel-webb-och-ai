@@ -12,3 +12,9 @@ _Information om videorna är senast uppdaterad november 2025._
 | 4 | AI, Machine Learning, Deep Learning and Generative AI Explained (IBM Technology) | https://youtu.be/qYNweeDHiyU | ~10 min | Nybörjare–medel | Översiktlig introduktion AI → ML → Deep Learning → Generativ AI. Bra för nybörjare när begreppen först har förklarats på svenska. | Ja – AI-del, introduktion |
 | 5 | How Large Language Models Work | https://youtu.be/5sLYAQS9sWQ | ~8–12 min | Medel | Fördjupning om LLM:er och hur de fungerar. Passar deltagare som vill förstå “under huven” utan matte. | Ja – AI-del, fördjupning |
 | 6 | AI Agents, Clearly Explained / AI Agents for Curious Beginners | https://youtu.be/FwOTs4UxQS4 | ~10 min | Medel–fortsättning | Introduktion till AI-agenter och mer avancerade arbetsflöden. Bra som framtidsspaning/extraresurs i slutet av kursen när vi pratar agenter och automation. | Ja – AI-del, agenter |
+| 7 | The Limits of AI: Generative AI, NLP, AGI, & What’s Next? | https://youtu.be/rBlCOLfMYfw |  |  |  |  |
+| 8 | Hur du kopplar källkod till GitHub och aktiverar GitHub Pages för HTML-sidor (på svenska) | https://youtu.be/3hmz-nMtzTg |  |  |  |  |
+| 9 | Git Explained in 100 Seconds | https://youtu.be/hwP7WQkmECE |  |  |  |  |
+| 10 | Array Map in 100 Seconds | https://youtu.be/DC471a9qrU4 |  |  |  |  |
+| 11 | 100+ JavaScript Concepts you Need to Know | https://youtu.be/lkIFF4maKMU |  |  |  |  |
+| 12 | JavaScript DOM API 👨🏻‍💻 in 1 Minute #shorts | https://youtube.com/shorts/URHSg95yWo0 |  |  |  |  |
