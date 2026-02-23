@@ -1,14 +1,8 @@
 # Modern webb- och apputveckling med AI
 
-<p align="left">
-  <img src="assets/images/medialabbet-logo-anim.svg"
-       alt="Medialabbet – animerad logotyp"
-       width="260" />
-</p>
-
 Den här sidan samlar materialet till studiecirkeln **Modern webb- och apputveckling med AI**, framtagen av Medialabbet (verksamhet inom Friskvårdsklubben) tillsammans med Bottennappet i Väst.
 
-Studiecirkeln bedrivs genom samarbete mellan **Bottennappet i Vöst** och **Folkuniversitetet**
+Studiecirkeln bedrivs genom samarbete mellan **Bottennappet i Väst** och **Folkuniversitetet**
 
 Målet är att deltagare – oavsett tidigare erfarenhet – steg för steg ska kunna:
 
@@ -80,8 +74,13 @@ När dessa paket är klara dyker de upp i menyn, precis som Paket 1 och 2.
 - Som **referens** – slå upp begrepp, exempel och videolänkar när du fastnar.
 
 Om du är med i Medialabbet, Friskvårdsklubben eller Bottennappet i Väst kan du också:
-
-- ställa frågor i den gemensamma chatt-servern (se menyn “Chatt-server”)  
+  
 - dela länkar till dina GitHub Pages-sidor och små projekt för feedback.
 
 Välkommen att utforska och bygga vidare i din egen takt!
+
+<p align="left">
+  <img src="assets/images/medialabbet-logo-anim.svg"
+       alt="Medialabbet – animerad logotyp"
+       width="260" />
+</p>
