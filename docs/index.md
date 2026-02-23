@@ -4,6 +4,8 @@ Den här sidan samlar materialet till studiecirkeln **Modern webb- och apputveck
 
 Studiecirkeln bedrivs genom samarbete mellan **Bottennappet i Väst** och **Folkuniversitetet**
 
+Anmäl dig här: https://forms.gle/Ra5jxeEZQxuXdTX7A
+
 Målet är att deltagare – oavsett tidigare erfarenhet – steg för steg ska kunna:
 
 - skapa **en första egen hemsida** och publicera den gratis på GitHub Pages  
@@ -11,7 +13,7 @@ Målet är att deltagare – oavsett tidigare erfarenhet – steg för steg ska 
 - förstå grunderna i **frontend, backend och API:er**  
 - börja använda **AI-verktyg** som stöd i utvecklingsarbetet  
 
-Studiecirkeln är praktisk och bygger på “lär genom att göra”, i lugn takt med mycket utrymme för frågor.
+Studiecirkeln är praktisk och bygger på “lär genom att göra”, i lugn takt med mycket utrymme för frågor och tid att söka svar själv och tillsammans.
 
 ---
 
