@@ -1,0 +1,1462 @@
+
+<!doctype html>
+<html lang="sv" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://fvk-medialabbet.github.io/studiecirkel-webb-och-ai/zulip-kurs-chatt/">
+      
+      
+        <link rel="prev" href="../ollama_setup_medialaptop/">
+      
+      
+        <link rel="next" href="../ordlista/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/medialabbet-logo-icon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Chatt-server - Modern webb- och apputveckling med AI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="light-green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#zulip-i-kursen-modern-webb-och-apputveckling-med-ai" class="md-skip">
+          Gå till innehållet
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Sidhuvud">
+    <a href=".." title="Modern webb- och apputveckling med AI" class="md-header__button md-logo" aria-label="Modern webb- och apputveckling med AI" data-md-component="logo">
+      
+  <img src="../assets/images/medialabbet-logo-icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Modern webb- och apputveckling med AI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chatt-server
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="light-green"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Sök" placeholder="Sök" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Sök">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Rensa" aria-label="Rensa" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialiserar sök
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/FVK-Medialabbet/studiecirkel-webb-och-ai" title="Gå till datakatalog" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    FVK-Medialabbet / Studiecirkel i webb och AI
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Modern webb- och apputveckling med AI" class="md-nav__button md-logo" aria-label="Modern webb- och apputveckling med AI" data-md-component="logo">
+      
+  <img src="../assets/images/medialabbet-logo-icon.svg" alt="logo">
+
+    </a>
+    Modern webb- och apputveckling med AI
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/FVK-Medialabbet/studiecirkel-webb-och-ai" title="Gå till datakatalog" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    FVK-Medialabbet / Studiecirkel i webb och AI
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paket 1 – Gör din första hemsida
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Paket 1 – Gör din första hemsida
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paket-1_hemsida/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Översikt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paket-1_hemsida/1.1_git-github-pages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.1 Din första hemsida med GitHub Pages
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paket-1_hemsida/1.2_html-och-css/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.2 HTML och CSS – bygg vidare på din första sida
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paket-1_hemsida/1.3_js-menyer-interaktivitet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.3 Enklare menyer och interaktivitet med JavaScript
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paket-1_hemsida/1.4_ovning-sjalvstudier/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.4 Övning & självstudier – din första riktiga hemsida
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paket 2 – Bygg en enkel webbapp
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Paket 2 – Bygg en enkel webbapp
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paket-2_webbapp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Översikt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paket-2_webbapp/2.1_intro-frontend-backend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.1 Vad är en webbapp? – frontend, backend och API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paket-2_webbapp/2.2_js-data-listor.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.2 JavaScript i webbläsaren – data och listor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paket-2_webbapp/2.3_api-och-json.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.3 Hämta data från ett API – fetch och JSON
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paket-2_webbapp/2.4_ovning-aktivitetslista.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.4 Övning & självstudier – aktivitetslista som webbapp
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. AI och ChatGPT
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    4. AI och ChatGPT
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chatgpt-grunder.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ChatGPT – grunder
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prompt-engineering-niva-1.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prompt engineering – nivå 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../videoresurser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Videoresurser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../videobank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Videobank
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ollama_setup_medialaptop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ollama-setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chatt-server
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chatt-server
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Innehållsförteckning">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Innehållsförteckning
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-vad-ar-zulip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Vad är Zulip?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-varfor-anvander-vi-zulip-i-kursen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Varför använder vi Zulip i kursen?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-hur-vi-anvander-zulip-i-kursen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Hur vi använder Zulip i kursen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Hur vi använder Zulip i kursen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-streams-kanaler-du-behover-bry-dig-om" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Streams (kanaler) du behöver bry dig om
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-topics-sa-vi-haller-ordning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Topics – så vi håller ordning
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-grundregler-for-oss-i-zulip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Grundregler för oss i Zulip
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-sa-har-kommer-du-igang-oversikt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Så här kommer du igång (översikt)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-zulip-katchapp-kort-om-fortsattningen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Zulip + Katchapp (kort om fortsättningen)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-fragor-eller-strul" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Frågor eller strul?
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ordlista/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ordlista
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../referenser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referenser och licens
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Innehållsförteckning">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Innehållsförteckning
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-vad-ar-zulip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Vad är Zulip?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-varfor-anvander-vi-zulip-i-kursen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Varför använder vi Zulip i kursen?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-hur-vi-anvander-zulip-i-kursen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Hur vi använder Zulip i kursen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Hur vi använder Zulip i kursen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-streams-kanaler-du-behover-bry-dig-om" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Streams (kanaler) du behöver bry dig om
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-topics-sa-vi-haller-ordning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Topics – så vi håller ordning
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-grundregler-for-oss-i-zulip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Grundregler för oss i Zulip
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-sa-har-kommer-du-igang-oversikt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Så här kommer du igång (översikt)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-zulip-katchapp-kort-om-fortsattningen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Zulip + Katchapp (kort om fortsättningen)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-fragor-eller-strul" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Frågor eller strul?
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="zulip-i-kursen-modern-webb-och-apputveckling-med-ai">Zulip i kursen “Modern webb- och apputveckling med AI”<a class="headerlink" href="#zulip-i-kursen-modern-webb-och-apputveckling-med-ai" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>Kortversion för kursdeltagare</strong><br />
+Den här sidan förklarar <em>vad</em> Zulip är, <em>varför</em> vi använder det i kursen och <em>hur</em> du själv ska använda det.</p>
+</blockquote>
+<hr />
+<h2 id="1-vad-ar-zulip">1. Vad är Zulip?<a class="headerlink" href="#1-vad-ar-zulip" title="Permanent link">&para;</a></h2>
+<p>Zulip är ett modernt chattverktyg (lite som Slack / Teams) som vi använder som <strong>nav för kursen</strong>:</p>
+<ul>
+<li>Vi delar <strong>information</strong> (schema, länkar, uppgifter).</li>
+<li>Vi ställer och svarar på <strong>frågor</strong>.</li>
+<li>Vi fortsätter <strong>diskussioner</strong> mellan träffarna.</li>
+<li>Vi kopplar det senare till <strong>utvecklingen av Katchapp</strong> (kod, CI, mm).</li>
+</ul>
+<p>Den stora skillnaden mot “vanlig chatt” är att Zulip har:</p>
+<ul>
+<li><strong>Streams</strong> – ungefär som kanaler.</li>
+<li><strong>Topics</strong> – ämnen <em>inne i</em> varje stream.</li>
+</ul>
+<p>Det gör att diskussionerna blir mer strukturerade och lättare att hitta i efteråt.</p>
+<hr />
+<h2 id="2-varfor-anvander-vi-zulip-i-kursen">2. Varför använder vi Zulip i kursen?<a class="headerlink" href="#2-varfor-anvander-vi-zulip-i-kursen" title="Permanent link">&para;</a></h2>
+<p>Vi använder Zulip för att:</p>
+<ul>
+<li>Samla <strong>all kurskommunikation på ett ställe</strong> (istället för utspridda mejl/SMS).</li>
+<li>Göra det lättare att:</li>
+<li>komma ikapp om man missat en träff,</li>
+<li>hitta tillbaka till tidigare frågor och svar,</li>
+<li>jobba mer som moderna utvecklingsteam.</li>
+</ul>
+<p>Zulip är dessutom <strong>öppen källkod</strong> och går att <strong>självhosta</strong>, vilket passar Medialabbet och Katchapp-projektet. Det ni lär er här går att återanvända i andra projekt.</p>
+<hr />
+<h2 id="3-hur-vi-anvander-zulip-i-kursen">3. Hur vi använder Zulip i kursen<a class="headerlink" href="#3-hur-vi-anvander-zulip-i-kursen" title="Permanent link">&para;</a></h2>
+<h3 id="31-streams-kanaler-du-behover-bry-dig-om">3.1 Streams (kanaler) du behöver bry dig om<a class="headerlink" href="#31-streams-kanaler-du-behover-bry-dig-om" title="Permanent link">&para;</a></h3>
+<p>Exakta namn kan justeras, men troligen har vi något i stil med:</p>
+<ul>
+<li>
+<p><code>#allmänt</code><br />
+  För kort info, små frågor, “jag blir sen idag”-meddelanden osv.</p>
+</li>
+<li>
+<p><code>#meddelanden</code> (endast ledare)<br />
+  Viktig info från kursledningen: schema, större besked, viktiga länkar.</p>
+</li>
+<li>
+<p><code>#kurs-intro-ai</code><br />
+  Diskussioner, frågor och länkar kopplade till teoridelen av kursen.</p>
+</li>
+<li>
+<p><code>#kurs-uppgifter</code><br />
+  Frågor, kodsnuttar och diskussion kring övningar/uppgifter.</p>
+</li>
+</ul>
+<p>På sikt kan fler streams dyka upp, t.ex. för Katchapp-utvecklingen,
+men som deltagare räcker det att du kan de här.</p>
+<h3 id="32-topics-sa-vi-haller-ordning">3.2 Topics – så vi håller ordning<a class="headerlink" href="#32-topics-sa-vi-haller-ordning" title="Permanent link">&para;</a></h3>
+<p>Inom varje stream delar vi upp snacket i <strong>topics</strong> (ämnen).<br />
+Några exempel:</p>
+<p>I <code>#kurs-intro-ai</code> kan vi ha topics:</p>
+<ul>
+<li><code>Träff 01 – intro &amp; nuläge</code></li>
+<li><code>Träff 02 – verktyg &amp; utvecklingsmiljö</code></li>
+<li><code>Frågor om AI-agenter</code></li>
+</ul>
+<p>I <code>#kurs-uppgifter</code> kan vi ha topics:</p>
+<ul>
+<li><code>Uppgift 01 – frågor</code></li>
+<li><code>Uppgift 02 – kodexempel</code></li>
+<li><code>Problem: kan inte starta dev-server</code></li>
+</ul>
+<p>När du skriver ett nytt meddelande:</p>
+<ol>
+<li>Välj rätt <strong>stream</strong>.</li>
+<li>Välj ett befintligt <strong>topic</strong>, eller skapa ett nytt (kort, tydligt namn).</li>
+</ol>
+<hr />
+<h2 id="4-grundregler-for-oss-i-zulip">4. Grundregler för oss i Zulip<a class="headerlink" href="#4-grundregler-for-oss-i-zulip" title="Permanent link">&para;</a></h2>
+<p>För att det ska bli tydligt för alla har vi några enkla “husregler”:</p>
+<ol>
+<li><strong>Rätt stream</strong>  </li>
+<li>Kursfrågor → <code>#kurs-intro-ai</code> eller <code>#kurs-uppgifter</code>  </li>
+<li>
+<p>Allmän info/snack → <code>#allmänt</code></p>
+</li>
+<li>
+<p><strong>Använd topics</strong>  </p>
+</li>
+<li>Skriv inte i “(no topic)” om du kan undvika det.  </li>
+<li>
+<p>Hellre <em>flera</em> topics än en enda gigantisk.</p>
+</li>
+<li>
+<p><strong>En fråga per topic (när det går)</strong>  </p>
+</li>
+<li>
+<p>Det gör det lättare att följa och hitta i efterhand.</p>
+</li>
+<li>
+<p><strong>Ställ frågor hellre i Zulip än i privata meddelanden</strong>  </p>
+</li>
+<li>Då kan fler hjälpa till.  </li>
+<li>
+<p>Andra kan ha samma fråga – då slipper vi svara flera gånger.</p>
+</li>
+<li>
+<p><strong>Visa hänsyn</strong>  </p>
+</li>
+<li>Tänk på tonen.  </li>
+<li>Lägg inte outa personliga saker om dig själv eller andra.</li>
+</ol>
+<hr />
+<h2 id="5-sa-har-kommer-du-igang-oversikt">5. Så här kommer du igång (översikt)<a class="headerlink" href="#5-sa-har-kommer-du-igang-oversikt" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Du får en inbjudan</strong>  </li>
+<li>
+<p>Antingen via mejl, eller via en direkt länk från kursledaren.</p>
+</li>
+<li>
+<p><strong>Skapa konto / logga in</strong>  </p>
+</li>
+<li>Följ instruktionerna i inbjudan.  </li>
+<li>
+<p>Välj ett namn så vi ser vem du är (förnamn räcker bra).</p>
+</li>
+<li>
+<p><strong>Testa att skriva</strong>  </p>
+</li>
+<li>Gå till stream <code>#allmänt</code> och topic <code>Presentera dig</code> (eller liknande).  </li>
+<li>
+<p>Skriv ett kort “hej” och något om vem du är.</p>
+</li>
+<li>
+<p><strong>Installera klient (frivilligt men rekommenderas)</strong>  </p>
+</li>
+<li>Du kan köra Zulip i webbläsaren.  </li>
+<li>Det finns också appar till mobil och desktop om du vill.</li>
+</ol>
+<hr />
+<h2 id="6-zulip-katchapp-kort-om-fortsattningen">6. Zulip + Katchapp (kort om fortsättningen)<a class="headerlink" href="#6-zulip-katchapp-kort-om-fortsattningen" title="Permanent link">&para;</a></h2>
+<p>Efter kursen (och delvis parallellt) kommer Zulip också användas för:</p>
+<ul>
+<li><strong>själva utvecklingen av Katchapp</strong>  </li>
+<li>kommunikation inom Medialabbet kring:</li>
+<li>infrastruktur (servrar, Docker mm)</li>
+<li>frontend/backendlösningar</li>
+<li>AI-agenter</li>
+</ul>
+<p>Det betyder att den vana du får i kursen är direkt användbar om du senare vill:</p>
+<ul>
+<li>bidra i Katchapp-projektet,  </li>
+<li>vara med och utveckla plattformen vidare,  </li>
+<li>eller använda liknande arbetssätt i egna projekt.</li>
+</ul>
+<hr />
+<h2 id="7-fragor-eller-strul">7. Frågor eller strul?<a class="headerlink" href="#7-fragor-eller-strul" title="Permanent link">&para;</a></h2>
+<p>Om du får problem med Zulip (inloggning, hitta rätt stream/topic, notifieringar osv):</p>
+<ul>
+<li>Ställ en fråga i <code>#allmänt</code> (om du kommer in).</li>
+<li>Eller kontakta kursledaren på det sätt som sagts i kursinbjudan.</li>
+</ul>
+<p>Det är helt okej att vara ovan – att lära sig verktygen <em>är en del av kursen</em>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.sections", "navigation.tracking", "search.highlight", "search.suggest"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Kopierat till urklipp", "clipboard.copy": "Kopiera till urklipp", "search.result.more.one": "1 till p\u00e5 denna sida", "search.result.more.other": "# till p\u00e5 denna sida", "search.result.none": "Inga s\u00f6kresultat", "search.result.one": "1 s\u00f6kresultat", "search.result.other": "# s\u00f6kresultat", "search.result.placeholder": "Skriv s\u00f6kord", "search.result.term.missing": "Saknas", "select.version": "V\u00e4lj version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
