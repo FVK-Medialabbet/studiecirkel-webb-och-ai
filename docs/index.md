@@ -4,8 +4,6 @@ Den här sidan samlar materialet till studiecirkeln **Modern webb- och apputveck
 
 Studiecirkeln bedrivs genom samarbete mellan **Bottennappet i Väst** och **Folkuniversitetet**
 
-Anmäl dig här: [https://forms.gle/Ra5jxeEZQxuXdTX7A](https://forms.gle/Ra5jxeEZQxuXdTX7A)
-
 Målet är att deltagare – oavsett tidigare erfarenhet – steg för steg ska kunna:
 
 - skapa **en första egen hemsida** och publicera den gratis på GitHub Pages  
